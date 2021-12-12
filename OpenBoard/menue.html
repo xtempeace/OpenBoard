@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+  <link rel="stylesheet" type="text/css" href="./style.css"> 
+</head>
+<body>
+  
+  <div class="toolbar">
+    <div class="tool" id="pencil">
+      <img src="./resources-master/NewIcons/Black_Pencil.svg" alt="" class="tool-img">
+      <div class="size-box">
+        <!-- .size1+.size2+.size3+.size4  Press Enter -->
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+      </div>
+      
+    </div>
+    <div class="tool" id="eraser">
+      <img src="./resources-master/NewIcons/Eraser.svg" alt="" class="tool-img">
+      <div class="size-box">
+        <!-- .size1+.size2+.size3+.size4  Press Enter -->
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+      </div>
+    </div>
+    <div class="tool" id="rect">
+    <i class="fas fa-circle" class="tool-img"></i>  
+    
+      <div class="size-box">
+        <!-- .size1+.size2+.size3+.size4  Press Enter -->
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+      </div>
+    </div>
+    <div class="tool" id="line">
+      <i class="fas fa-grip-lines-vertical" class="tool-img"></i>
+      <div class="size-box">
+        <!-- .size1+.size2+.size3+.size4  Press Enter -->
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+      </div>
+    </div>
+    <div class="tool" id="sticky">
+      <img src="./resources-master/NewIcons/StickyNote.svg" class="tool-img" alt="">
+    </div>
+    
+    <div class="color-container">
+      <!-- .color*3 -->
+      <div class="color red"></div>
+      <div class="color blue" ></div>
+      <div class="color green"></div>
+    </div>
+
+  </div>
+
+  <!-- Drawing Board,For using Board in HTML we use this TAG -->
+  <!-- Canvas is used only for Drawing -->
+  <canvas></canvas>
+
+  <!-- Variable,canvasBoard Dimension set -->
+  <script src="./1.setup(Variable,canvasBoard Dimension set).js">
+  </script>
+  <!-- Pencil,Rectangle,Line Drawing Code -->
+  <script src="./2.draw(Pencil,Rectangle,Line Drawing Code).js">
+  </script>
+  <!-- variable Declare,Tool Change code-->
+  <script src="./3.toolmano(Tool Change,colorChange,sizeChange).js">
+  </script>
+  <!-- Color change Logic -->
+  <!-- <script>
+  </script> -->
+  <!-- Adding sticky.js file -->
+  <script src="5.sticky.js"></script>
+  
+</body>
+</html>
